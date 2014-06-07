@@ -86,22 +86,34 @@ hr {
     margin-bottom: 10px;
 }
 
+.m-r-m {
+    margin-right: 10px;
+}
+
 .search {
     margin-top: 18px;
     margin-bottom: 30px;
 }
+h1, h2, h3 {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
 html,
 body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #2c2a2a;
+    color: #f5f5f5;
     overflow: hidden;
     font-family: source-sans-pro, "Helvetica Neue", sans-serif;
 }
 .message {
-    margin-top: 12px;
+    background: #343333;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    color: #2980b9;
 }
 .full-column {
     padding-left: 0;
@@ -115,15 +127,14 @@ body {
 }
 .category-list > ul:first-child,
 .meeting-list > ul:first-child  {
-    border-top: solid 1px #c0c0c0;
+    border-top: solid 1px #333;
 }
 
 .category-list > ul > li,
 .meeting-list > ul > li {
-    border-bottom: solid 1px #c0c0c0;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 12px;
+    border-bottom: solid 1px #333;
+    border-top: 1px solid #222;
+    padding: 12px;
 
 }
 
@@ -139,4 +150,19 @@ body {
 
 .meeting-list li:last-child  {
     border-bottom: none;
+}
+
+.button.expand {
+    background-color: #1abc9c;
+    border-bottom: 3px solid #16a085;
+    font-size: 22px;
+    width: 95%;
+    font-weight: bold;
+    color: #07352c;
+    padding: 10px;
+}
+
+.fa-angle-right {
+    font-weight: bold;
+    font-size: 24px;
 }
