@@ -28,6 +28,11 @@ button {
 
 /* new */
 
+option { 
+    /* Whatever color  you want */
+    background-color: #82caff;
+}
+
 input.holo[type='text'], input.holo[type='password'] {
 	/* You can set width to whatever you like */
     width: 100%;
@@ -38,23 +43,23 @@ input.holo[type='text'], input.holo[type='password'] {
 	display: block;
 	outline: none;
 	border: none;
-    color: #000;
+    color: #a19f9f;
     font-family: source-code-pro;
-	background: bottom left linear-gradient(#000, #000) no-repeat, bottom center linear-gradient(#000, #000) repeat-x, bottom right linear-gradient(#000, #000) no-repeat;
+	background: bottom left linear-gradient(#a19f9f, #a19f9f) no-repeat, bottom center linear-gradient(#a19f9f, #a19f9f) repeat-x, bottom right linear-gradient(#a19f9f, #a19f9f) no-repeat;
 	background-size: 1px 6px, 1px 1px, 1px 6px;
     border-radius: 0;
 }
 
 ::-webkit-input-placeholder {
-   color: #000;
+   color: #a19f9f;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #000;
+   color: #a19f9f;
 }
 
 :-ms-input-placeholder {
-   color: #000;
+   color: #a19f9f;
 }
 
 
@@ -86,8 +91,16 @@ hr {
     margin-bottom: 10px;
 }
 
+.m-b-l {
+    margin-bottom: 20px;
+}
+
 .m-r-m {
     margin-right: 10px;
+}
+
+.m-l-m {
+    margin-left: 10px;
 }
 
 .search {
@@ -109,6 +122,7 @@ body {
     color: #f5f5f5;
     overflow: hidden;
     font-family: source-sans-pro, "Helvetica Neue", sans-serif;
+    font-size: 18px;
 }
 .message {
     background: #343333;
@@ -135,7 +149,11 @@ body {
     border-bottom: solid 1px #333;
     border-top: 1px solid #222;
     padding: 12px;
+}
 
+.category-list > ul > li .fa,
+.meeting-list > ul > li .fa {
+    color: whitesmoke;
 }
 
 .profile-list ul {
@@ -162,7 +180,32 @@ body {
     padding: 10px;
 }
 
-.fa-angle-right {
+.fa-angle-right, .fa-angle-left {
     font-weight: bold;
     font-size: 24px;
+}
+
+.ui-menu .ui-menu-item a {
+    color: whitesmoke;
+}
+
+#ui-id-1 {
+    border-radius: 0;
+    border: none;
+    background: #343333;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 2px;
+    background: rgba(60,70,70,0.95);
+}
+
+.ui-widget-content .ui-state-focus,
+.ui-widget-content li:hover {
+    background: rgba(0,0,0,0.3);
+    border-radius: 0;
+    border: none;
+}
+
+.profile-name {
+    font-size: 22px;
+    color: #1abc9c;
+    font-weight: bold;
 }
