@@ -107,16 +107,19 @@ body {
     padding-left: 0;
     padding-right: 0;
 }
-.category-list > ul {
+.category-list > ul,
+.meeting-list > ul {
     list-style-type: none;
     width: 100%;
     margin: 0;
 }
-.category-list > ul:first-child {
+.category-list > ul:first-child,
+.meeting-list > ul:first-child  {
     border-top: solid 1px #c0c0c0;
 }
 
-.category-list > ul > li {
+.category-list > ul > li,
+.meeting-list > ul > li {
     border-bottom: solid 1px #c0c0c0;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -127,4 +130,13 @@ body {
 .profile-list ul {
     list-style: none;
     margin: 0;
+}
+
+.meeting-list h3 {
+    padding: 8px 12px;
+    background: lightgray;
+}
+
+.meeting-list li:last-child  {
+    border-bottom: none;
 }
