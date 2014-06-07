@@ -62,6 +62,10 @@ input.holo[type='text'], input.holo[type='password'] {
    color: #a19f9f;
 }
 
+a, a:hover {
+    color: whitesmoke;
+    display: block;
+}
 
 hr {
     display: block; height: 1px;
@@ -162,8 +166,11 @@ body {
 }
 
 .meeting-list h3 {
-    padding: 8px 12px;
-    background: lightgray;
+    padding: 5px 12px;
+    margin: 0;
+    font-weight: normal;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #333;
 }
 
 .meeting-list li:last-child  {
@@ -178,6 +185,13 @@ body {
     font-weight: bold;
     color: #07352c;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button.expand:hover {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fa-angle-right, .fa-angle-left {
@@ -208,4 +222,10 @@ body {
     font-size: 22px;
     color: #1abc9c;
     font-weight: bold;
+}
+
+.meetings-heading {
+    color: whitesmoke;
+    font-size: 24px;
+    margin-top: -16px;
 }
