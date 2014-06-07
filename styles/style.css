@@ -1,0 +1,107 @@
+@font-face {
+    font-family: source-sans-pro;
+    src: url(../fonts/ssp-light.woff);
+    font-weight: 300;
+}
+@font-face {
+    font-family: source-sans-pro;
+    src: url(../fonts/ssp-regular.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: source-sans-pro;
+    src: url(../fonts/ssp-extralight.woff);
+    font-weight: 200;
+}
+@font-face {
+    font-family: source-code-pro;
+    src: url(../fonts/scp-regular.woff);
+    font-weigth: 400;
+}
+
+a,
+button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    /* Disable selection/copy in UIWebView */
+}
+
+/* new */
+
+
+.splash {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #16a085;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    -webkit-animation: hide-splash 1s 2s forwards;
+    -moz-animation:    hide-splash 1s 2s forwards;
+    -o-animation:      hide-splash 1s 2s forwards;
+    animation:         hide-splash 1s 2s forwards;
+
+}
+
+input.holo[type='text'], input.holo[type='password'] {
+	/* You can set width to whatever you like */
+    width: 100%;
+	font-size: 16px;
+	margin: 0;
+	padding: 8px 8px 6px 8px;
+	position: relative;
+	display: block;
+	outline: none;
+	border: none;
+    color: #fff;
+    font-family: source-code-pro;
+	background: bottom left linear-gradient(#fff, #fff) no-repeat, bottom center linear-gradient(#fff, #fff) repeat-x, bottom right linear-gradient(#fff, #fff) no-repeat;
+	background-size: 1px 6px, 1px 1px, 1px 6px;
+    border-radius: 0;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+}
+
+:-ms-input-placeholder {
+   color: #fff;
+}
+
+
+hr {
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #ecf0f1;
+    margin: 1em 0; padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll, .scroll-y, .scroll-x {
+    -webkit-overflow-scrolling: touch;
+}
+.scroll > *, .scroll-y > *, .scroll-x > * {
+    -webkit-transform : translateZ(0);
+}
+.scroll { overflow: auto; }
+.scroll-y { overflow-y: auto; }
+.scroll-x { overflow-x: auto; }
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden;
+    font-family: source-sans-pro, "Helvetica Neue", sans-serif;
+}
