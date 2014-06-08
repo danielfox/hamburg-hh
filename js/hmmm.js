@@ -3,10 +3,7 @@ window.onload = function () {
     $(document).foundation();
 
     $(function() {
-    var availableContacts = [{
-            label: 'Kitty Kitten',
-            icon: 'fa-user'
-        },
+    var availableContacts = [
         {
             label: 'Julia Bode',
             icon: 'fa-user'
@@ -16,11 +13,11 @@ window.onload = function () {
             icon: 'fa-user'
         },
         {
-            label: 'Sophie Vo',
+            label: 'Eva Nesbach',
             icon: 'fa-user'
         },
         {
-            label: 'Eva Nesbach',
+            label: 'Eva Davies',
             icon: 'fa-user'
         },
         {
