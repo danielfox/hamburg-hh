@@ -261,6 +261,9 @@ td {
     font-size: 13px;
 }
 
+.all-topics-list h3 {
+    font-size: 16px;
+}
 
 input[type=checkbox] { display:none; } /* to hide the checkbox itself */
 input[type=checkbox] + label:after {
@@ -278,3 +281,7 @@ float: right; } /* space between checkbox and label */
 
 input[type=checkbox]:checked + label:after { content: "\f046"; } /* checked icon */
 input[type=checkbox]:checked + label:after { letter-spacing: 7px; } /* allow space for check mark */
+
+i.italic {
+    color: gray;
+}
