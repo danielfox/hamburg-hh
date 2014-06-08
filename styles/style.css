@@ -65,6 +65,8 @@ input.holo[type='text'], input.holo[type='password'] {
     min-height: 100px;
 }
 
+
+
 ::-webkit-input-placeholder {
    color: #a19f9f;
 }
@@ -258,3 +260,21 @@ td {
 .fa-pencil {
     font-size: 13px;
 }
+
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:after {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+label {
+    display: block;
+}
+
+input[type=checkbox] + label:after { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:after { letter-spacing: 10px;padding-left: 10px;
+float: right; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:after { content: "\f046"; } /* checked icon */
+input[type=checkbox]:checked + label:after { letter-spacing: 7px; } /* allow space for check mark */
