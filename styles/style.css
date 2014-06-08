@@ -255,6 +255,12 @@ table {
 
 td {
     padding: 5px 8px;
+    width: 50%;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
 }
 
 .fa-pencil {
@@ -285,4 +291,22 @@ input[type=checkbox]:checked + label:after { letter-spacing: 7px; } /* allow spa
 
 i.italic {
     color: gray;
+}
+
+.ui-dialog {
+    background: #343333;
+}
+
+.ui-dialog .button.expand {
+    width: 100%;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    background: transparent;
+    border: 0;
+}
+
+.ui-dialog .ui-dialog-title {
+    line-height: 24px;
+    color: whitesmoke;
 }

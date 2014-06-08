@@ -1,8 +1,9 @@
 window.onload = function () {
     'use strict';
     $(document).foundation();
+};
 
-    $(function() {
+$(function() {
     var availableContacts = [
         {
             label: 'Julia Bode',
@@ -50,6 +51,8 @@ window.onload = function () {
         }
     ];
 
+    var availableContactsNew = [ 'Sophie Vo', 'Julia Bode', 'Tatjana Kiel', 'Eva Nesbach', 'Eva Davies', 'Daniel Opitz'];
+
     if ( $("#multi-search-input").length ) {
         $( "#multi-search-input" ).autocomplete({
             source: availableContacts,
@@ -65,5 +68,34 @@ window.onload = function () {
                  .appendTo(ul);
          };
      }
-  });
-};
+
+    if ( $("#multi-search-input-new").length ) {
+        $( "#multi-search-input-new" ).autocomplete({
+            source: availableContactsNew,
+            sortResults: false,
+            select: function (event, ui) {
+                 $('#multi-search-input-new').val(ui.item.label);
+                 if ( ui.item.label === 'Sophie Vo' ) {
+                    $('.hide').removeClass('hide');
+                 }
+                 return false;
+            }
+        });
+     }
+
+    $( "#dialog" ).dialog({
+        autoOpen: false,
+            show: {
+                    effect: "slideDown",
+                    duration: 300
+                  },
+            hide: {
+                    effect: "slideUp",
+                    duration: 300
+                  }
+    });
+ 
+    $( "#opener" ).click(function() {
+        $( "#dialog" ).dialog( "open" );
+    });
+});
