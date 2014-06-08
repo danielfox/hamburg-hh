@@ -26,6 +26,14 @@ button {
     /* Disable selection/copy in UIWebView */
 }
 
+.main-screen {
+    overflow: hidden;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
 /* new */
 
 option { 
@@ -48,6 +56,13 @@ input.holo[type='text'], input.holo[type='password'] {
 	background: bottom left linear-gradient(#a19f9f, #a19f9f) no-repeat, bottom center linear-gradient(#a19f9f, #a19f9f) repeat-x, bottom right linear-gradient(#a19f9f, #a19f9f) no-repeat;
 	background-size: 1px 6px, 1px 1px, 1px 6px;
     border-radius: 0;
+}
+
+.pseudo-textarea {
+    background: top left linear-gradient(#a19f9f, #a19f9f) no-repeat, top center linear-gradient(#a19f9f, #a19f9f) repeat-x, top right linear-gradient(#a19f9f, #a19f9f) no-repeat;
+    background-size: 1px 6px, 1px 1px, 1px 6px;
+    padding: 2px 10px;
+    min-height: 100px;
 }
 
 ::-webkit-input-placeholder {
@@ -228,4 +243,18 @@ body {
     color: whitesmoke;
     font-size: 24px;
     margin-top: -16px;
+}
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    line-height: 26px;
+}
+
+td {
+    padding: 5px 8px;
+}
+
+.fa-pencil {
+    font-size: 13px;
 }

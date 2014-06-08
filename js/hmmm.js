@@ -32,17 +32,20 @@ window.onload = function () {
             icon: 'fa-comment-o'
         }
     ];
-    $( "#multi-search-input" ).autocomplete({
-        source: availableContacts,
-        select: function (event, ui) {
-             $('#multi-search-input').val(ui.item.label);
-             return false;
-        }
-    }).data("ui-autocomplete")._renderItem = function (ul, item) {
-         return $("<li></li>")
-             .data("item.autocomplete", item)
-             .append("<li><a href='./profile-overview.html'>" + item.label + "<i class='fa " + item.icon + " right'></i></a></li>")
-             .appendTo(ul);
-     };
+
+    if ( $("#multi-search-input").length ) {
+        $( "#multi-search-input" ).autocomplete({
+            source: availableContacts,
+            select: function (event, ui) {
+                 $('#multi-search-input').val(ui.item.label);
+                 return false;
+            }
+        }).data("ui-autocomplete")._renderItem = function (ul, item) {
+             return $("<li></li>")
+                 .data("item.autocomplete", item)
+                 .append("<li><a href='./profile-overview.html'>" + item.label + "<i class='fa " + item.icon + " right'></i></a></li>")
+                 .appendTo(ul);
+         };
+     }
   });
 };
