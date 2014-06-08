@@ -28,7 +28,27 @@ window.onload = function () {
             icon: 'fa-user'
         },
         {
-            label: 'Favorite Animal',
+            label: '#jobs',
+            icon: 'fa-comment-o'
+        },
+        {
+            label: '#events',
+            icon: 'fa-comment-o'
+        },
+        {
+            label: '#hackathon',
+            icon: 'fa-comment-o'
+        },
+        {
+            label: '#networking',
+            icon: 'fa-comment-o'
+        },
+        {
+            label: '#research',
+            icon: 'fa-comment-o'
+        },
+        {
+            label: '#xing',
             icon: 'fa-comment-o'
         }
     ];
@@ -36,6 +56,7 @@ window.onload = function () {
     if ( $("#multi-search-input").length ) {
         $( "#multi-search-input" ).autocomplete({
             source: availableContacts,
+            sortResults: false,
             select: function (event, ui) {
                  $('#multi-search-input').val(ui.item.label);
                  return false;
